@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo-Game:Online</title>
+    <style>
+        *{
+            border:0;
+            margin:0;
+        }
+        
+        .main{
+            display:flex;
+            height:100vh;
+        }
+        .side-bar-1{
+            width:22.5%;
+            /* background-color:burlywood; */
+        }
+        .side-bar-middle{
+            width:50%;
+        }
+        .side-bar-2{
+            width:22.5%;
+            /* background-color:burlywood; */
+        }
+        .upper-layer{
+            height:35%;
+            display:flex;
+        }
+        .ul-first-column{
+            width:37.5%;
+            height:100%;
+            background-color:red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle-for-user{
+            height:80%;
+            width:80%;
+            border-radius:50px;
+            background-color:coral;
+        }
+        .circle-for-user table{
+            border-collapse: separate;
+            border-spacing:25px;
+        }
+        .circle-for-user th,td{
+            border:none;
+        }
+        .circle-for-user td{
+            border-radius:100px;
+            background-color: burlywood;
+        }
+
+
+
+
+        .ul-middle-column{
+            width:25%;
+            height:100%;
+            background-color: red;
+        }
+        
+
+
+
+
+
+        .ul-last-column{
+            width:37.5%;
+            height:100%;
+            background-color:green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+        .middle-layer{
+            height:30%;
+            display: flex;
+        }
+        .ml-first-column{
+            width:37.5%;
+            height:100%;
+            background-color:red;
+        }
+
+
+
+
+        .ml-middle-column{
+            width:25%;
+            height:100%;
+        }
+
+
+
+
+        .ml-last-column{
+            width:37.5%;
+            height:100%;
+            background-color:red;
+        }
+
+
+
+
+
+        .last-layer{
+            height:35%;
+            display:flex;
+        }
+        .ll-first-column{
+            width:37.5%;
+            height:100%;
+            background-color:blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+        .ll-middle-column{
+            width:25%;
+            height:100%;
+            background-color:red;
+        }
+
+
+
+
+        .ll-last-column{
+            width:37.5%;
+            height:100%;
+            background-color:yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        table {
+            width: 100%;
+            height:100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid #000000;
+            background-color:burlywood;
+        }
+        td:hover{
+            background-color:wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="side-bar-1"></div>
+        <div class="side-bar-middle">
+            <div class="upper-layer">
+                <div class="ul-first-column">
+                    <div class="circle-for-user">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="ul-middle-column">
+                    <table>
+                        <tbody>
+                            <!-- 6 Rows -->
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: green;">2</td>
+                                <td style="background-color: green;">*</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: green;">2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: green;">2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: green;">2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: green;">2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ul-last-column">
+                    <div class="circle-for-user">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-layer">
+                <div class="ml-first-column">
+                    <table>
+                        <tbody>
+                            <!-- 6 Rows -->
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: red;">*</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td style="background-color: red;">2</td>
+                                <td style="background-color: red;">3</td>
+                                <td style="background-color: red;">4</td>
+                                <td style="background-color: red;">5</td>
+                                <td style="background-color: red;">6</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ml-middle-column">
+                    <div class="winner-logo">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="ml-last-column">
+                    <table>
+                        <tbody>
+                            <!-- 6 Rows -->
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: yellow;">1</td>
+                                <td style="background-color: yellow;">2</td>
+                                <td style="background-color: yellow;">3</td>
+                                <td style="background-color: yellow;">4</td>
+                                <td style="background-color: yellow;">5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td style="background-color: yellow;">*</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="last-layer">
+                <div class="ll-first-column">
+                    <div class="circle-for-user">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="ll-middle-column">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: blue;">*</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ll-last-column">
+                    <div class="circle-for-user">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar-2"></div>
+    </div>
+    <script>
+        //for-red
+        const redArray=[]
+    </script>
+</body>
+</html>
